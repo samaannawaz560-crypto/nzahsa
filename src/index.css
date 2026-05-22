@@ -1,12 +1,63 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: black;
-  color: white;
-  font-family: Arial, sans-serif;
+* {
+  gap: 30px;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 100px;
+.game-card {
+  position: relative;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 25px;
+  padding: 40px 30px;
+  overflow: hidden;
+  transition: 0.4s;
+  backdrop-filter: blur(15px);
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  border-color: #00f7ff;
+  box-shadow: 0 0 35px #00f7ff33;
+}
+
+.card-glow {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: #00f7ff22;
+  border-radius: 50%;
+  top: -70px;
+  right: -70px;
+  filter: blur(30px);
+}
+
+.game-card h3 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  color: #7df9ff;
+}
+
+.game-card p {
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+@media(max-width: 768px) {
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .desc {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .games-section {
+    padding: 80px 20px;
+  }
 }
