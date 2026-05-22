@@ -1,3 +1,5 @@
+import './index.css'
+
 function App() {
   const games = [
     'Cyber Rush',
@@ -54,3 +56,5 @@ function App() {
     </div>
   )
 }
+
+export default App
