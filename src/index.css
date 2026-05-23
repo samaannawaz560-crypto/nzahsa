@@ -203,61 +203,10 @@ body{
   background:linear-gradient(90deg,#00f0ff,#ff00ff);
   color:white;
   cursor:pointer;
-  transition:0.3s;
 }
 
-.card-content button:hover{
-  transform:scale(1.05);
-}
+/* LEADERBOARD */
 
-/* PARTICLES */
-
-.particles::before,
-.particles::after{
-  content:'';
-  position:fixed;
-  width:400px;
-  height:400px;
-  border-radius:50%;
-  filter:blur(150px);
-  z-index:0;
-}
-
-.particles::before{
-  background:#00f0ff22;
-  top:-100px;
-  left:-100px;
-}
-
-.particles::after{
-  background:#ff00ff22;
-  bottom:-100px;
-  right:-100px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-  .navbar{
-    padding:20px;
-    flex-direction:column;
-    gap:20px;
-  }
-
-  .hero h1{
-    font-size:70px;
-  }
-
-  .desc{
-    font-size:18px;
-  }
-
-  .games-section{
-    padding:70px 20px;
-  }
-
-}
 .leaderboard-section{
   padding:100px 70px;
 }
@@ -280,18 +229,14 @@ body{
   padding:40px;
   border-radius:25px;
   text-align:center;
-  transition:0.4s;
-}
-
-.player-card:hover{
-  transform:translateY(-10px);
 }
 
 .player-card h3{
   color:#63f5ff;
   margin-bottom:15px;
 }
-/* STATS SECTION */
+
+/* STATS */
 
 .stats-section{
   padding:120px 70px;
@@ -305,28 +250,14 @@ body{
   padding:50px;
   border-radius:30px;
   text-align:center;
-  transition:0.4s;
-  border:1px solid #ffffff11;
-}
-
-.stat-box:hover{
-  transform:translateY(-10px) scale(1.03);
-  box-shadow:
-  0 0 30px #00f0ff55,
-  0 0 50px #ff00ff44;
 }
 
 .stat-box h1{
   font-size:60px;
   color:#63f5ff;
   margin-bottom:20px;
-  text-shadow:0 0 20px #00f0ff;
 }
 
-.stat-box p{
-  color:#bbb;
-  font-size:20px;
-}
 /* FOOTER */
 
 .footer{
@@ -339,7 +270,6 @@ body{
   font-size:50px;
   color:#63f5ff;
   margin-bottom:20px;
-  text-shadow:0 0 20px #00f0ff;
 }
 
 .footer p{
@@ -362,13 +292,30 @@ body{
   background:linear-gradient(90deg,#00f0ff,#ff00ff);
   color:white;
   cursor:pointer;
-  transition:0.4s;
-  font-size:18px;
 }
 
-.socials button:hover{
-  transform:scale(1.08);
-  box-shadow:
-  0 0 30px #00f0ff88,
-  0 0 50px #ff00ff66;
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .navbar{
+    padding:20px;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .hero h1{
+    font-size:70px;
+  }
+
+  .desc{
+    font-size:18px;
+  }
+
+  .games-section,
+  .leaderboard-section,
+  .stats-section{
+    padding:70px 20px;
+  }
+
 }
