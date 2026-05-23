@@ -291,3 +291,39 @@ body{
   color:#63f5ff;
   margin-bottom:15px;
 }
+/* STATS SECTION */
+
+.stats-section{
+  padding:120px 70px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.stat-box{
+  background:#111122;
+  padding:50px;
+  border-radius:30px;
+  text-align:center;
+  transition:0.4s;
+  border:1px solid #ffffff11;
+}
+
+.stat-box:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:
+  0 0 30px #00f0ff55,
+  0 0 50px #ff00ff44;
+}
+
+.stat-box h1{
+  font-size:60px;
+  color:#63f5ff;
+  margin-bottom:20px;
+  text-shadow:0 0 20px #00f0ff;
+}
+
+.stat-box p{
+  color:#bbb;
+  font-size:20px;
+}
