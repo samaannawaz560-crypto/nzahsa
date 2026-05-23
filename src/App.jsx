@@ -117,5 +117,22 @@ function App() {
     </div>
   )
 }
+<section className="stats-section">
 
+  <div className="stat-box">
+    <h1>10M+</h1>
+    <p>Players Worldwide</p>
+  </div>
+
+  <div className="stat-box">
+    <h1>250+</h1>
+    <p>Esports Tournaments</p>
+  </div>
+
+  <div className="stat-box">
+    <h1>99%</h1>
+    <p>Pro Gamer Satisfaction</p>
+  </div>
+
+</section>
 export default App
