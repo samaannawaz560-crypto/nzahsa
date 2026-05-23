@@ -81,7 +81,72 @@ function App() {
 </div>
 
       </section>
+<section className="games">
 
+  <h2>Featured Games</h2>
+
+  <div className="games-grid">
+
+    <div className="game-card">
+      <img
+        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200"
+        alt=""
+      />
+
+      <div className="card-content">
+        <h3>Cyber Arena</h3>
+
+        <p>
+          Futuristic multiplayer battle experience.
+        </p>
+
+        <button>
+          Play Now
+        </button>
+      </div>
+    </div>
+
+    <div className="game-card">
+      <img
+        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200"
+        alt=""
+      />
+
+      <div className="card-content">
+        <h3>Shadow Ops</h3>
+
+        <p>
+          Tactical warfare with neon action.
+        </p>
+
+        <button>
+          Play Now
+        </button>
+      </div>
+    </div>
+
+    <div className="game-card">
+      <img
+        src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?q=80&w=1200"
+        alt=""
+      />
+
+      <div className="card-content">
+        <h3>Nova Strike</h3>
+
+        <p>
+          Enter the next generation combat zone.
+        </p>
+
+        <button>
+          Play Now
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
       <section className="games-section">
 
         <h2>FEATURED GAMES</h2>
