@@ -319,3 +319,72 @@ body{
   }
 
 }
+/* PARTICLES */
+
+.particles{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-image:
+  radial-gradient(#00f0ff 1px, transparent 1px),
+  radial-gradient(#ff00ff 1px, transparent 1px);
+
+  background-size:60px 60px;
+  background-position:0 0,30px 30px;
+
+  opacity:0.08;
+  z-index:0;
+
+  animation:moveParticles 20s linear infinite;
+}
+
+@keyframes moveParticles{
+  from{
+    transform:translateY(0);
+  }
+  to{
+    transform:translateY(-60px);
+  }
+}
+
+/* ULTRA GLOW */
+
+.logo,
+.hero span,
+.games-section h2,
+.leaderboard-section h2{
+  animation:glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse{
+  from{
+    text-shadow:
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff;
+  }
+
+  to{
+    text-shadow:
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+  }
+}
+
+/* SMOOTH HOVER */
+
+.game-card,
+.player-card,
+.stat-box{
+  transition:all 0.4s ease;
+}
+
+.game-card:hover,
+.player-card:hover,
+.stat-box:hover{
+  transform:translateY(-12px) scale(1.03);
+  box-shadow:
+  0 0 30px #00f0ff55,
+  0 0 60px #ff00ff44;
+}
