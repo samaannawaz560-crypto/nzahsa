@@ -149,5 +149,4 @@ function App() {
     <button>Twitch</button>
   </div>
 
-</footer>
-  export default App
+</footer>export default App
