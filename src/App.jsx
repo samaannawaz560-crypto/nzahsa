@@ -1,26 +1,22 @@
 import './index.css'
 
 function App() {
+
   const games = [
     {
-      title: 'Cyber Rush',
+      title: 'FREE FIRE',
       image:
         'https://images.unsplash.com/photo-1542751371-adc38448a05e'
     },
     {
-      title: 'Neon Battle',
+      title: 'PUBG MOBILE',
       image:
         'https://images.unsplash.com/photo-1511512578047-dfb367046420'
     },
     {
-      title: 'Pixel Arena',
+      title: 'CALL OF DUTY',
       image:
         'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8'
-    },
-    {
-      title: 'Sky Legends',
-      image:
-        'https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42'
     }
   ]
 
@@ -30,98 +26,127 @@ function App() {
       <div className="particles"></div>
 
       <nav className="navbar">
-        <h1 className="logo">NZAHSA</h1>
+
+        <h1 className="logo">
+          NZAHSA
+        </h1>
 
         <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Games</a>
-          <a href="#">Leaderboard</a>
-          <a href="#">Players</a>
+          <a href="#">HOME</a>
+          <a href="#">GAMES</a>
+          <a href="#">TOURNAMENTS</a>
+          <a href="#">LEADERBOARD</a>
         </div>
+
       </nav>
 
       <section className="hero">
 
-        <div className="overlay"></div>
+        <div className="hero-left">
 
-        <div className="hero-content">
-          <p className="tag">NEXT GEN GAMING</p>
+          <p className="tag">
+            NEXT GEN GAMING
+          </p>
 
           <h1>
             ENTER THE <span>FUTURE</span>
           </h1>
 
           <p className="desc">
-            Dive into futuristic battles, neon vibes,
-            esports energy, and next-level gaming experiences.
+            Dive into futuristic battles,
+            neon vibes, esports energy,
+            and next-level gaming experiences.
           </p>
 
-          <button className="play-btn">
-            PLAY NOW
-          </button>
+          <div className="hero-buttons">
+
+            <button className="play-btn">
+              PLAY NOW
+            </button>
+
+            <button className="secondary-btn">
+              BROWSE GAMES
+            </button>
+
+          </div>
+
         </div>
+
+        <div className="hero-right">
+
+          <img
+            src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200"
+            alt="gaming"
+          />
+
+        </div>
+
       </section>
 
       <section className="games-section">
-        <h2>Trending Games</h2>
+
+        <h2>FEATURED GAMES</h2>
 
         <div className="games-grid">
 
           {games.map((game, index) => (
             <div className="game-card" key={index}>
-              <img src={game.image} alt={game.title} />
+
+              <img
+                src={game.image}
+                alt={game.title}
+              />
+
               <div className="card-content">
+
                 <h3>{game.title}</h3>
-                <p>Futuristic multiplayer action packed experience.</p>
-                <button>Play Game</button>
+
+                <p>
+                  Futuristic multiplayer
+                  action packed experience.
+                </p>
+
+                <button>
+                  PLAY GAME
+                </button>
+
               </div>
+
             </div>
           ))}
 
         </div>
-      </section>
 
-      <section className="leaderboard-section">
-        <h2>Top Players</h2>
-        <div className="leaderboard">
-          <div className="player-card">
-            <h3>#1 ShadowX</h3>
-            <p>Rank Score: 9850</p>
-          </div>
-          <div className="player-card">
-            <h3>#2 NeonHunter</h3>
-            <p>Rank Score: 9420</p>
-          </div>
-          <div className="player-card">
-            <h3>#3 CyberWolf</h3>
-            <p>Rank Score: 9010</p>
-          </div>
-        </div>
       </section>
 
       <section className="stats-section">
+
         <div className="stat-box">
-          <h1>10M+</h1>
-          <p>Players Worldwide</p>
+          <h1>25K+</h1>
+          <p>PLAYERS</p>
         </div>
+
         <div className="stat-box">
-          <h1>250+</h1>
-          <p>Esports Tournaments</p>
+          <h1>500+</h1>
+          <p>TOURNAMENTS</p>
         </div>
+
         <div className="stat-box">
-          <h1>99%</h1>
-          <p>Pro Gamer Satisfaction</p>
+          <h1>$10K+</h1>
+          <p>PRIZE POOL</p>
         </div>
+
       </section>
 
       <footer className="footer">
-        <h2>NZAHSA</h2>
-        <p>The future of esports, gaming, and cyber entertainment.</p>
-        <div className="socials">
-          <button>Discord</button>
-          <button>YouTube</button>
-          <button>Twitch</button>
-        </div>
+
+        <h2>NZAHSA ESPORTS</h2>
+
+        <p>
+          The future of esports,
+          gaming and cyber entertainment.
+        </p>
+
       </footer>
 
     </div>
