@@ -529,3 +529,19 @@ body{
   color:white;
   cursor:pointer;
 }
+.games{
+  padding:80px;
+}
+
+.games h2{
+  font-size:50px;
+  margin-bottom:40px;
+}
+
+.games-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(300px,1fr));
+
+  gap:30px;
+}
