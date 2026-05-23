@@ -75,7 +75,7 @@ function App() {
         <div className="hero-right">
 
           <img
-            src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200"
+            src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200"
             alt="gaming"
           />
 
