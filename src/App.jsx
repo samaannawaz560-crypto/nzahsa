@@ -90,7 +90,30 @@ function App() {
 
         </div>
       </section>
+<section className="leaderboard-section">
 
+  <h2>Top Players</h2>
+
+  <div className="leaderboard">
+
+    <div className="player-card">
+      <h3>#1 ShadowX</h3>
+      <p>Rank Score: 9850</p>
+    </div>
+
+    <div className="player-card">
+      <h3>#2 NeonHunter</h3>
+      <p>Rank Score: 9420</p>
+    </div>
+
+    <div className="player-card">
+      <h3>#3 CyberWolf</h3>
+      <p>Rank Score: 9010</p>
+    </div>
+
+  </div>
+
+</section>
     </div>
   )
 }
