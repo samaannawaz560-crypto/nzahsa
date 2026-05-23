@@ -135,4 +135,19 @@ function App() {
   </div>
 
 </section>
-export default App
+<footer className="footer">
+
+  <h2>NZAHSA</h2>
+
+  <p>
+    The future of esports, gaming, and cyber entertainment.
+  </p>
+
+  <div className="socials">
+    <button>Discord</button>
+    <button>YouTube</button>
+    <button>Twitch</button>
+  </div>
+
+</footer>
+  export default App
