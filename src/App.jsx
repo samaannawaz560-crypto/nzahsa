@@ -69,84 +69,63 @@ function App() {
 
           {games.map((game, index) => (
             <div className="game-card" key={index}>
-
-              <img
-                src={game.image}
-                alt={game.title}
-              />
-
+              <img src={game.image} alt={game.title} />
               <div className="card-content">
                 <h3>{game.title}</h3>
-
-                <p>
-                  Futuristic multiplayer action packed experience.
-                </p>
-
+                <p>Futuristic multiplayer action packed experience.</p>
                 <button>Play Game</button>
               </div>
-
             </div>
           ))}
 
         </div>
       </section>
-<section className="leaderboard-section">
 
-  <h2>Top Players</h2>
+      <section className="leaderboard-section">
+        <h2>Top Players</h2>
+        <div className="leaderboard">
+          <div className="player-card">
+            <h3>#1 ShadowX</h3>
+            <p>Rank Score: 9850</p>
+          </div>
+          <div className="player-card">
+            <h3>#2 NeonHunter</h3>
+            <p>Rank Score: 9420</p>
+          </div>
+          <div className="player-card">
+            <h3>#3 CyberWolf</h3>
+            <p>Rank Score: 9010</p>
+          </div>
+        </div>
+      </section>
 
-  <div className="leaderboard">
+      <section className="stats-section">
+        <div className="stat-box">
+          <h1>10M+</h1>
+          <p>Players Worldwide</p>
+        </div>
+        <div className="stat-box">
+          <h1>250+</h1>
+          <p>Esports Tournaments</p>
+        </div>
+        <div className="stat-box">
+          <h1>99%</h1>
+          <p>Pro Gamer Satisfaction</p>
+        </div>
+      </section>
 
-    <div className="player-card">
-      <h3>#1 ShadowX</h3>
-      <p>Rank Score: 9850</p>
-    </div>
+      <footer className="footer">
+        <h2>NZAHSA</h2>
+        <p>The future of esports, gaming, and cyber entertainment.</p>
+        <div className="socials">
+          <button>Discord</button>
+          <button>YouTube</button>
+          <button>Twitch</button>
+        </div>
+      </footer>
 
-    <div className="player-card">
-      <h3>#2 NeonHunter</h3>
-      <p>Rank Score: 9420</p>
-    </div>
-
-    <div className="player-card">
-      <h3>#3 CyberWolf</h3>
-      <p>Rank Score: 9010</p>
-    </div>
-
-  </div>
-
-</section>
     </div>
   )
 }
-<section className="stats-section">
 
-  <div className="stat-box">
-    <h1>10M+</h1>
-    <p>Players Worldwide</p>
-  </div>
-
-  <div className="stat-box">
-    <h1>250+</h1>
-    <p>Esports Tournaments</p>
-  </div>
-
-  <div className="stat-box">
-    <h1>99%</h1>
-    <p>Pro Gamer Satisfaction</p>
-  </div>
-
-</section>
-<footer className="footer">
-
-  <h2>NZAHSA</h2>
-
-  <p>
-    The future of esports, gaming, and cyber entertainment.
-  </p>
-
-  <div className="socials">
-    <button>Discord</button>
-    <button>YouTube</button>
-    <button>Twitch</button>
-  </div>
-
-</footer>export default App
+export default App
