@@ -72,14 +72,13 @@ function App() {
 
         </div>
 
-        <div className="hero-right">
+      <div className="hero-right">
 
-          <img
-            src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200"
-            alt="gaming"
-          />
+  <div className="hero-box">
+    🎮
+  </div>
 
-        </div>
+</div>
 
       </section>
 
